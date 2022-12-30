@@ -1,0 +1,29 @@
+.banner-promo {
+  margin: -28px 0 40px;
+
+  img {
+    @include img-block;
+    border-radius: 8px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin: -21px 0 59px;
+
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+
+.sidebar-banner {
+  margin: 0 0 40px;
+
+  img {
+    @include img-block;
+    border-radius: 8px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 30px;
+  }
+}

@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: $black;
+}
+
+html {
+  &.menu-active {
+    overflow: hidden;
+
+    .page-content,
+    .page-footer {
+      filter: blur(7.5px);
+    }
+  }
+}
+
+.page-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-content,
+.page-footer {
+  transition: filter 0.5s;
+}
+
+.container {
+  padding: 0 20px;
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 95px;
+  }
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.nicescroll-rails {
+  display: none !important;
+}
+
+.page-layout-2col {
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .page-headline {
+      flex: 0 0 100%;
+    }
+
+    .column-right {
+      flex: 0 0 auto;
+      width: 300px;
+      order: 1;
+    }
+
+    .column-left {
+      padding-right: 10px;
+      flex: 0 0 auto;
+      width: calc(100% - 300px);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .column-right {
+      width: 357px;
+    }
+    .column-left {
+      width: calc(100% - 357px);
+    }
+  }
+}
+
+.text-more {
+  display: none;
+}

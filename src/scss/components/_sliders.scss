@@ -1,0 +1,136 @@
+.swiper-initialized {
+  position: relative;
+}
+
+.swiper-slide {
+  transition-property: all;
+}
+
+.swiper-fade {
+  .swiper-slide {
+    opacity: 0 !important;
+
+    &.swiper-slide-active {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: block;
+  width: 43px;
+  height: 20px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &.swiper-button-prev {
+    background-image: url(../img/icons/ico-slider-prev.svg);
+  }
+  &.swiper-button-next {
+    background-image: url(../img/icons/ico-slider-next.svg);
+    margin-left: 20px;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+
+  .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    background: #535353;
+    border-radius: 100px;
+    transition: all 0.2s;
+    margin: 0 7px 0 0;
+    cursor: pointer;
+
+    &.swiper-pagination-bullet-active {
+      transform: scale(1.5);
+      background: #888888;
+    }
+  }
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .swiper-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.news-popular-slider {
+  .slider-controls {
+    margin: 10px 0 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    .slider-controls {
+      width: 62%;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .slider-controls {
+      margin: 8px 0 0;
+      width: 610px;
+    }
+  }
+}
+
+.news-card-slider {
+  position: relative;
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .slider-controls {
+    position: absolute;
+    left: 19px;
+    right: 16px;
+    bottom: 12px;
+    z-index: 5;
+  }
+
+  .link-wrapper {
+    position: absolute;
+    right: 17px;
+    top: 22px;
+    z-index: 5;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .slider-controls {
+      left: 26px;
+      right: 21px;
+      bottom: 35px;
+    }
+
+    .link-wrapper {
+      right: auto;
+      left: 26px;
+      top: auto;
+      bottom: 74px;
+    }
+  }
+}
+
+.coins-slider {
+  .swiper-slide {
+    width: 164px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .swiper-slide {
+      width: 300px;
+    }
+  }
+}

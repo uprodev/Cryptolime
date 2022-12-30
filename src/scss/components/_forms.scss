@@ -1,0 +1,410 @@
+input,
+textarea {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.subscription-form {
+  .field {
+    position: relative;
+    border: 1px solid $input-border;
+    border-radius: 10px;
+    padding: 0 72px 0 0;
+
+    input {
+      width: 100%;
+      height: 28px;
+      display: block;
+      appearance: none;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.02em;
+      color: $white;
+      padding: 5px 25px;
+      background: none;
+      border: none;
+      @include placeholder-text($gray-500, 1);
+    }
+
+    .btn {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      height: 30px;
+      width: 72px;
+      background-image: url(../img/icons/ico-arrow-submit.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.profile-form {
+  .profile-form-block {
+    margin: 0 0 30px;
+
+    &--personal {
+      margin: 0 0 27px;
+    }
+  }
+
+  h3 {
+    margin: 0 0 23px;
+  }
+
+  .profile-form-field {
+    position: relative;
+    margin: 0 0 24px;
+
+    label {
+      display: block;
+      color: $gray-100;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 115.6%;
+      margin: 0 0 11px;
+      cursor: pointer;
+
+      .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #3e3e3e;
+        margin-left: 4px;
+
+        &.icon-lang {
+          border-radius: 100%;
+          padding: 4px;
+
+          img {
+            width: 10px;
+            height: 10px;
+          }
+        }
+
+        &.icon-theme {
+          padding: 3px 3px 4px;
+          border-radius: 13px;
+          img {
+            margin: 0 5px;
+            width: 8px;
+            height: 8px;
+
+            &:first-child {
+              width: 7px;
+              height: 9px;
+            }
+          }
+        }
+      }
+    }
+
+    .profile-form-note {
+      margin: 7px 0 0;
+      font-size: 12px;
+      line-height: 16px;
+      color: $form-note;
+    }
+
+    .jstyling-select {
+      margin: 13px 0 0;
+    }
+
+    input,
+    textarea {
+      border: 1px solid $input-border;
+      border-radius: 5px;
+      width: 100%;
+      height: 36px;
+      display: block;
+      appearance: none;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: $white;
+      padding: 6px 16px;
+      background: none;
+      @include placeholder-text($gray-300, 1);
+
+      &:focus {
+        border-color: $valid;
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 128px;
+    }
+
+    .wrap {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        border: 1px solid;
+        border-radius: 100%;
+        transform: translateY(-50%);
+        width: 23px;
+        height: 23px;
+      }
+
+      &.error {
+        &:after {
+          content: "";
+          border-color: $error;
+          background: url(../img/icons/ico-form-error.svg) 50% no-repeat;
+        }
+        input {
+          border-color: $error;
+        }
+      }
+
+      &.success {
+        &:after {
+          content: "";
+          border-color: $gray-500;
+          background: url(../img/icons/ico-form-success.svg) 50% no-repeat;
+        }
+        input {
+          border-color: $lime;
+        }
+      }
+    }
+  }
+
+  .profile-form-submit {
+    padding: 18px 0 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 845px;
+
+    .profile-form-block {
+      margin: 0 0 52px;
+
+      &--general {
+        margin: 0 0 67px;
+      }
+
+      &--personal {
+        margin: 0 0 52px;
+      }
+
+      &--contact {
+        margin: 0 0 56px;
+
+        .profile-form-field {
+          margin: 0 0 26.7px;
+        }
+      }
+    }
+
+    h3 {
+      margin: 0 0 41px;
+    }
+
+    .profile-form-field {
+      margin: 0 0 29.5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      label {
+        margin: 0;
+        font-size: 18px;
+        line-height: 115.6%;
+        max-width: 250px;
+
+        .icon {
+          margin-left: 8px;
+
+          &.icon-lang {
+            padding: 6px;
+
+            img {
+              width: 11px;
+              height: 11px;
+            }
+          }
+
+          &.icon-theme {
+            padding: 4px 3px 4px;
+            img {
+              margin: 0 5.5px;
+              width: 10px;
+              height: 10px;
+
+              &:first-child {
+                width: 9px;
+                height: 11px;
+              }
+            }
+          }
+        }
+      }
+
+      .profile-form-note {
+        margin: 17px -10px 0 0;
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+      input,
+      textarea {
+        padding: 6px 25px;
+      }
+
+      .jstyling-select {
+        margin: 0;
+        transform: translateX(-14px);
+      }
+
+      .wrap {
+        width: 60.71%;
+      }
+
+      &--textarea {
+        align-items: flex-start;
+
+        label {
+          line-height: 36px;
+        }
+      }
+    }
+
+    .profile-form-submit {
+      padding: 38px 0 0;
+    }
+  }
+}
+
+.jstyling-select {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  background: $gray-700;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $gray-100;
+  height: 22px;
+  cursor: pointer;
+  max-width: 220px;
+
+  .jstyling-select-s {
+    padding: 0 40px 0 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:after {
+      content: url(../img/icons/ico-select.svg);
+      position: absolute;
+      right: 13px;
+      top: 50%;
+      width: 8px;
+      height: 4px;
+      margin: -2px 0 0;
+      transition: all 0.3s;
+      font-size: 0;
+      line-height: 0;
+    }
+
+    .jstyling-select-t {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .jstyling-select-l {
+    margin: 0;
+    padding: 15px 14px;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: $gray-700;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+
+    div {
+      list-style: none;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0 7px;
+      font-size: 16px;
+      line-height: 22px;
+      cursor: pointer;
+      position: relative;
+      color: $gray-300;
+      margin: 4px 0 0;
+      border-radius: 3px;
+
+      &:hover {
+        background: $gray-500;
+        color: $white;
+      }
+
+      &.selected {
+        background: $gray-500;
+        color: $white;
+
+        &:after {
+          content: url(../img/icons/ico-check.svg);
+          position: absolute;
+          right: 8px;
+          top: 50%;
+          width: 9px;
+          height: 6px;
+          margin: -3px 0 0;
+          font-size: 0;
+          line-height: 0;
+        }
+      }
+    }
+  }
+
+  &.active {
+    z-index: 700;
+    border-bottom-color: transparent;
+    border-radius: 5px 5px 0 0;
+
+    .jstyling-select-s {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+
+    .jstyling-select-l {
+      display: block;
+    }
+  }
+}
+
+.br-widget {
+  height: 18px;
+
+  a {
+    background: url("../img/icons/ico-star.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin: 0 4px 0 0;
+
+    &:hover,
+    &.br-selected,
+    &.br-active {
+      background-image: url("../img/icons/ico-star-full.svg");
+    }
+  }
+}

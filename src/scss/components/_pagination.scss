@@ -1,0 +1,43 @@
+.pagination {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 17px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 16px;
+        color: $gray-400;
+      }
+
+      span {
+        display: block;
+        color: $gray-400;
+        padding: 0 4px;
+        text-align: center;
+      }
+
+      &.pagination-current {
+        a {
+          color: $lime;
+        }
+      }
+
+      &.pagination-prev,
+      &.pagination-next {
+        margin: 0 14px;
+        a {
+          width: 20px;
+          background: #3e3e3e;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

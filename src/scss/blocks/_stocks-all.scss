@@ -1,0 +1,22 @@
+.stocks-all {
+  @include media-breakpoint-up(lg) {
+    .stock-filter,
+    .stock-card {
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .page-layout-2col {
+      .column-right {
+        width: 534px;
+      }
+
+      .column-left {
+        width: calc(100% - 534px);
+        padding-right: 16px;
+      }
+    }
+  }
+}

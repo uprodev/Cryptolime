@@ -1,0 +1,146 @@
+.stock-card-wide {
+  @include glass;
+  margin: 36px 0;
+
+  .inner {
+    padding: 40px 18px 12px;
+  }
+
+  .stock-card-title {
+    display: flex;
+    align-items: center;
+    margin: 0 0 28px;
+
+    .stock-card-icon {
+      width: 70px;
+      height: 70px;
+      background: $gray-700;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      margin-right: 15px;
+
+      img {
+        display: block;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .stock-card-text {
+      p {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        color: $white;
+        margin: 0 0 6px;
+      }
+
+      .stock-card-links {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+          display: block;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #b9b9b9;
+          padding: 0 20px;
+          border-radius: 20px;
+          background: $gray-700;
+          margin: 0 6px 6px 0;
+          white-space: nowrap;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .stock-card-data {
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin: 0 0 19px;
+
+        .stock-card-data-title {
+          color: #b9b9b9;
+          font-size: 14px;
+          line-height: 19px;
+        }
+
+        .stock-card-data-value {
+          display: block;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 41px;
+          color: $white;
+          margin: 3px 0 0;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 66px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 30px;
+
+      .stock-card-title {
+        flex: 0 0 auto;
+        margin: 0 67px 0 0;
+
+        .stock-card-icon {
+          width: 100px;
+          height: 100px;
+          margin-right: 19px;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .stock-card-text {
+          p {
+            font-size: 24px;
+            line-height: 33px;
+            margin: 0 0 8px;
+          }
+
+          .stock-card-links {
+            a {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      .stock-card-data {
+        width: 100%;
+        ul {
+          flex-direction: row;
+          justify-content: space-between;
+
+          li {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

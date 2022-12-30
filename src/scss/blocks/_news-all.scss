@@ -1,0 +1,45 @@
+.news-all {
+  .news-filter-wrapper {
+    margin: 0 0 20px;
+  }
+
+  .view-type {
+    margin: 0 0 -3px;
+  }
+
+  .pagination {
+    margin: 0 0 50px;
+  }
+
+  .view-type-box {
+    .view-type {
+      margin: 0 0 18px;
+    }
+
+    .pagination {
+      margin-top: -10px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: -6px 0 0;
+
+    .news-filter-wrapper {
+      margin: 0 0 40px;
+    }
+
+    .page-layout-2col .column-left {
+      padding-right: 20px;
+    }
+
+    .recommended-list {
+      margin-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .page-layout-2col .column-left {
+      padding-right: 108px;
+    }
+  }
+}

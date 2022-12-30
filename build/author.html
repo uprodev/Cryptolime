@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cryptolime</title>
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- start header-->
+      <header id="header" class="header">
+        <div class="mobile-menu">
+          <div class="inner"></div>
+          <div class="container">
+            <div class="header-options">
+              <div class="theme-switch">
+                <a href="#" class="active">
+                  <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.46786 9.08508C7.53747 9.07332 6.63544 8.72483 5.89656 8.09166C5.15769 7.4585 4.62161 6.57466 4.36844 5.5722C4.11527 4.56973 4.15859 3.50246 4.49193 2.52984C4.82527 1.55722 5.43073 0.731459 6.21786 0.175943C5.82013 0.0601832 5.41095 0.00106853 5 0C3.67392 0 2.40215 0.589809 1.46447 1.63967C0.526784 2.68954 0 4.11347 0 5.5982C0 7.08294 0.526784 8.50686 1.46447 9.55673C2.40215 10.6066 3.67392 11.1964 5 11.1964C5.75123 11.1956 6.49239 11.0029 7.16701 10.6329C7.84163 10.2628 8.4319 9.72523 8.89286 9.06109C8.75165 9.07715 8.6098 9.08516 8.46786 9.08508Z" fill="#B9B9BA" />
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" fill="#B9B9BA" />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="lang-switch">
+                <a href="#" class="lang-switch-trigger">RU</a>
+                <ul>
+                  <li><a href="#">RU</a></li>
+                  <li><a href="#">RU</a></li>
+                  <li><a href="#">RU</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <nav class="main-navigation">
+              <ul>
+                <li class="active">
+                  <a href="#">
+                    <span class="nav-icon">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill" d="M0.256375 5.88578L6.38138 0.236299C6.54546 0.0849966 6.76798 0 7 0C7.23202 0 7.45454 0.0849966 7.61862 0.236299L13.7436 5.88578C13.9077 6.0371 14 6.24234 14 6.45637V14.1929C14 14.407 13.9078 14.6123 13.7437 14.7636C13.5796 14.915 13.3571 15 13.125 15H8.75V9.35052H5.25V15H0.875C0.642936 15 0.420376 14.915 0.256282 14.7636C0.0921874 14.6123 0 14.407 0 14.1929V6.45637C4.95577e-05 6.24234 0.0922695 6.0371 0.256375 5.88578Z" fill="#2B2B2E" />
+                      </svg>
+                    </span>
+                    <span class="nav-text">Главная</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="nav-icon">
+                      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          class="fill"
+                          d="M0 5.344C0.1 5.09088 0.296354 4.95702 0.540625 4.85129C3.58299 3.53636 6.62413 2.21623 9.66406 0.890879C9.90729 0.786712 10.1229 0.814837 10.3557 0.9164C13.0443 2.08723 15.734 3.25546 18.425 4.42109C18.8177 4.59192 19.212 4.76015 19.601 4.9388C19.7106 4.98489 19.8034 5.06338 19.8671 5.16373C19.9308 5.26409 19.9622 5.38151 19.9573 5.50025C19.9614 5.61506 19.932 5.72858 19.8726 5.82691C19.8132 5.92525 19.7265 6.00413 19.6229 6.0539C19.4766 6.13255 19.3625 6.11588 19.2812 5.96275C19.1891 5.79088 19.0323 5.72682 18.8495 5.70234L11.7792 4.79244C11.2193 4.72005 10.6594 4.64505 10.0995 4.57213C9.71979 4.52005 9.39687 4.7638 9.35885 5.12213C9.32083 5.48046 9.57187 5.76484 9.94792 5.81275C11.9309 6.069 13.9135 6.32612 15.8958 6.58411C16.5396 6.66692 17.1833 6.75077 17.8276 6.82786C18.0068 6.84973 18.0911 6.92577 18.0906 7.11588C18.0875 9.37525 18.0866 11.6343 18.088 13.893C18.088 14.2789 17.8276 14.556 17.474 14.5612C17.1203 14.5664 16.8422 14.2794 16.8422 13.8872C16.8401 11.7584 16.8401 9.62977 16.8422 7.5013V7.27109C16.7516 7.30807 16.6859 7.33307 16.6224 7.36067C14.5453 8.26345 12.4687 9.16623 10.3927 10.069C10.265 10.1303 10.1252 10.1622 9.98359 10.1622C9.84196 10.1622 9.70214 10.1303 9.57448 10.069C6.54219 8.74748 3.50694 7.43064 0.46875 6.11848C0.36411 6.07603 0.268856 6.01338 0.188428 5.93411C0.107999 5.85485 0.0439716 5.76052 0 5.6565V5.344Z"
+                          fill="#2B2B2E"
+                        />
+                        <path class="fill" d="M3.74193 10.4228V9.32902C3.74193 9.00922 3.84609 8.94047 4.13411 9.0686C5.78828 9.78579 7.44505 10.4967 9.09453 11.2259C9.69141 11.4894 10.2638 11.4894 10.8602 11.229C12.5044 10.5051 14.1549 9.79516 15.8029 9.07954C16.1227 8.94047 16.2195 9.00089 16.2195 9.34308C16.2195 9.92901 16.1945 10.516 16.2247 11.0998C16.2846 12.2415 15.7815 13.0905 14.9107 13.7603C14.0674 14.4061 13.0997 14.7707 12.0711 14.979C10.293 15.3337 8.53255 15.267 6.80755 14.6795C5.87318 14.3613 5.02474 13.8946 4.38203 13.117C3.95755 12.6035 3.7263 12.017 3.74088 11.341C3.74974 11.0342 3.74193 10.7285 3.74193 10.4228Z" fill="#2B2B2E" />
+                      </svg>
+                    </span>
+                    <span class="nav-text">База знаний</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="nav-icon">
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="fill" width="17" height="17" rx="2" fill="#2B2B2E" />
+                        <path d="M2.5 2.9209V13.3709C2.5 13.7173 2.62292 14.0496 2.84171 14.2945C3.0605 14.5395 3.35725 14.6771 3.66667 14.6771H13" stroke="black" stroke-width="1.2" stroke-miterlimit="5.759" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4.83301 10.1054L7.16634 7.49289L9.49967 10.1054L12.9997 6.18665" stroke="black" stroke-width="1.2" stroke-miterlimit="5.759" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.25 6.18652H13V8.14589" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="nav-text">Монеты</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="nav-icon">
+                      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          class="fill"
+                          d="M0 15.328L0.224022 15.2572C0.635523 15.1318 0.996391 14.8787 1.25427 14.5344C1.51214 14.1901 1.65361 13.7726 1.65815 13.3424C1.66581 9.93552 1.67921 6.52859 1.64921 3.12167C1.64219 2.33152 1.73474 1.60967 2.24788 0.99441C2.86889 0.250222 3.67435 -0.0720894 4.64001 0.0134349C4.73511 0.021732 4.83148 0.0268374 4.92594 0.0268374C8.19075 0.0268374 11.4551 0.0279023 14.7191 0.0300297C15.1295 0.0300297 15.5546 0.00194715 15.949 0.0938538C17.2733 0.395103 18.1356 1.66456 17.9824 3.01444C17.9725 3.10942 17.9681 3.20489 17.969 3.30037C17.9677 6.22564 17.9671 9.15304 17.9671 12.0826C17.9671 12.5025 17.9926 12.9359 17.9033 13.3386C17.6339 14.5302 16.5496 15.3669 15.3299 15.3682C10.2265 15.3708 5.12316 15.3708 0.0197854 15.3682L0 15.328ZM7.25169 11.773C7.81717 11.773 8.38265 11.773 8.94749 11.773C9.47276 11.773 9.82699 11.4124 9.82444 10.8846C9.82061 10.111 9.82061 9.33728 9.82444 8.5633C9.82444 8.03867 9.46064 7.67679 8.94111 7.67934C7.82674 7.68445 6.71238 7.68445 5.59801 7.67934C5.07018 7.67615 4.71277 8.02399 4.71404 8.55628C4.7166 9.33834 4.7166 10.1202 4.71404 10.9018C4.71404 11.4213 5.06125 11.7737 5.57886 11.7724C6.13626 11.7728 6.69387 11.773 7.25169 11.773ZM10.1972 4.87491H10.5552C11.9874 4.87491 13.4196 4.87491 14.8519 4.87491C15.3573 4.87491 15.6956 4.53026 15.6694 4.05541C15.6465 3.63609 15.3101 3.34377 14.8397 3.34377C12.294 3.34377 9.74785 3.34377 7.20127 3.34377C6.63643 3.34377 6.07158 3.34377 5.50674 3.34377C5.16081 3.34377 4.90935 3.50653 4.77595 3.82373C4.5615 4.33432 4.93998 4.87236 5.51823 4.87364C7.07809 4.88002 8.63731 4.87619 10.1972 4.87619V4.87491ZM13.8805 8.95965H14.9036C15.3376 8.9437 15.6528 8.64436 15.6694 8.23397C15.6854 7.80763 15.3905 7.45149 14.9533 7.43809C14.2468 7.41575 13.5384 7.41575 12.8318 7.43809C12.3914 7.45213 12.1004 7.8038 12.1151 8.23333C12.1291 8.64245 12.4457 8.9488 12.881 8.95901C13.2129 8.96476 13.5467 8.95774 13.8824 8.95837L13.8805 8.95965ZM13.8932 12.0232C14.227 12.0232 14.5608 12.0283 14.8946 12.0232C15.3414 12.0143 15.6605 11.7041 15.6707 11.286C15.6763 11.184 15.6609 11.0819 15.6256 10.9861C15.5902 10.8902 15.5356 10.8026 15.4651 10.7287C15.3946 10.6547 15.3097 10.5959 15.2157 10.556C15.1216 10.5161 15.0204 10.4959 14.9182 10.4965C14.2349 10.4812 13.5513 10.4812 12.8676 10.4965C12.7654 10.4952 12.6641 10.515 12.5699 10.5545C12.4757 10.5941 12.3907 10.6527 12.3201 10.7266C12.2496 10.8005 12.195 10.8881 12.1599 10.9841C12.1247 11.08 12.1097 11.1821 12.1157 11.2841C12.1247 11.7041 12.4444 12.0124 12.8912 12.0213C13.225 12.0283 13.5588 12.0226 13.8932 12.0226V12.0232Z"
+                          fill="#2B2B2E"
+                        />
+                      </svg>
+                    </span>
+                    <span class="nav-text">Новости</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="nav-icon">
+                      <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill" d="M0 11.0021V9.96141C0.0226652 9.78455 0.0458829 9.60824 0.0679953 9.43138C0.296305 7.60679 1.0332 6.01561 2.28421 4.67447C3.72925 3.12209 5.51759 2.24334 7.61882 2.00328C7.90517 1.97057 5.74997 2.19654 7.12664 2.07222V11.0021H17C16.8389 12.5101 16.9596 11.3236 16.901 11.7239C16.6589 13.3861 15.9933 14.8658 14.8706 16.1132C12.9291 18.2649 10.4934 19.2219 7.61605 18.9569C5.66298 18.7767 3.9747 17.9589 2.56835 16.5862C1.2894 15.3552 0.437007 13.7459 0.135991 11.9939C0.0779465 11.6674 0.0431191 11.3347 0 11.0021Z" fill="#2B2B2E" />
+                        <path class="fill" d="M9.5013 0.00175831C9.81266 0.050407 10.124 0.0879191 10.4292 0.150049C12.0526 0.46518 13.5455 1.35425 14.6928 2.68916C16 4.1873 16.7436 5.99492 16.9512 8.08154C16.9808 8.38164 16.9839 8.68525 17 9H9.01609V8.76203C9.01609 5.92244 9.01609 3.08284 9.01609 0.243243C9.01609 0.162357 9.00571 0.0808857 9 0L9.5013 0.00175831Z" fill="#2B2B2E" />
+                      </svg>
+                    </span>
+                    <span class="nav-text">Биржи</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="search-wrapper">
+              <form action="#">
+                <div class="fields">
+                  <input type="text" placeholder="Поиск" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="header-left">
+            <div class="logo">
+              <a href="#"><img src="assets/img/logo.svg" alt="" /></a>
+            </div>
+            <div class="header-options">
+              <div class="theme-switch">
+                <a href="#" class="active">
+                  <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.46786 9.08508C7.53747 9.07332 6.63544 8.72483 5.89656 8.09166C5.15769 7.4585 4.62161 6.57466 4.36844 5.5722C4.11527 4.56973 4.15859 3.50246 4.49193 2.52984C4.82527 1.55722 5.43073 0.731459 6.21786 0.175943C5.82013 0.0601832 5.41095 0.00106853 5 0C3.67392 0 2.40215 0.589809 1.46447 1.63967C0.526784 2.68954 0 4.11347 0 5.5982C0 7.08294 0.526784 8.50686 1.46447 9.55673C2.40215 10.6066 3.67392 11.1964 5 11.1964C5.75123 11.1956 6.49239 11.0029 7.16701 10.6329C7.84163 10.2628 8.4319 9.72523 8.89286 9.06109C8.75165 9.07715 8.6098 9.08516 8.46786 9.08508Z" fill="#B9B9BA" />
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" fill="#B9B9BA" />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="lang-switch">
+                <a href="#" class="lang-switch-trigger">RU</a>
+                <ul>
+                  <li><a href="#">RU</a></li>
+                  <li><a href="#">RU</a></li>
+                  <li><a href="#">RU</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-center">
+            <div class="search-wrapper">
+              <form action="#">
+                <div class="fields">
+                  <input type="text" placeholder="Поиск" />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="header-right">
+            <div class="header-mobile">
+              <a href="#" class="link-search"><img src="assets/img/icons/ico-search.svg" alt="" /></a>
+              <a href="#" class="link-messages"><img src="assets/img/icons/icon-bell.svg" alt="" /><span>3</span></a>
+              <a href="#" class="link-account"><img src="assets/img/ava03.png" alt="" /></a>
+              <button type="button" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            </div>
+            <div class="header-buttons">
+              <a href="#popupLogin" class="btn btn-lime btn-popup">Войти</a>
+              <a href="#popupRegister" class="btn btn-white-outline btn-popup">Регистрация</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <nav class="main-navigation">
+            <ul>
+              <li class="active">
+                <a href="#">
+                  <span class="nav-icon">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill" d="M0.256375 5.88578L6.38138 0.236299C6.54546 0.0849966 6.76798 0 7 0C7.23202 0 7.45454 0.0849966 7.61862 0.236299L13.7436 5.88578C13.9077 6.0371 14 6.24234 14 6.45637V14.1929C14 14.407 13.9078 14.6123 13.7437 14.7636C13.5796 14.915 13.3571 15 13.125 15H8.75V9.35052H5.25V15H0.875C0.642936 15 0.420376 14.915 0.256282 14.7636C0.0921874 14.6123 0 14.407 0 14.1929V6.45637C4.95577e-05 6.24234 0.0922695 6.0371 0.256375 5.88578Z" fill="#2B2B2E" />
+                    </svg>
+                  </span>
+                  <span class="nav-text">Главная</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav-icon">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        class="fill"
+                        d="M0 5.344C0.1 5.09088 0.296354 4.95702 0.540625 4.85129C3.58299 3.53636 6.62413 2.21623 9.66406 0.890879C9.90729 0.786712 10.1229 0.814837 10.3557 0.9164C13.0443 2.08723 15.734 3.25546 18.425 4.42109C18.8177 4.59192 19.212 4.76015 19.601 4.9388C19.7106 4.98489 19.8034 5.06338 19.8671 5.16373C19.9308 5.26409 19.9622 5.38151 19.9573 5.50025C19.9614 5.61506 19.932 5.72858 19.8726 5.82691C19.8132 5.92525 19.7265 6.00413 19.6229 6.0539C19.4766 6.13255 19.3625 6.11588 19.2812 5.96275C19.1891 5.79088 19.0323 5.72682 18.8495 5.70234L11.7792 4.79244C11.2193 4.72005 10.6594 4.64505 10.0995 4.57213C9.71979 4.52005 9.39687 4.7638 9.35885 5.12213C9.32083 5.48046 9.57187 5.76484 9.94792 5.81275C11.9309 6.069 13.9135 6.32612 15.8958 6.58411C16.5396 6.66692 17.1833 6.75077 17.8276 6.82786C18.0068 6.84973 18.0911 6.92577 18.0906 7.11588C18.0875 9.37525 18.0866 11.6343 18.088 13.893C18.088 14.2789 17.8276 14.556 17.474 14.5612C17.1203 14.5664 16.8422 14.2794 16.8422 13.8872C16.8401 11.7584 16.8401 9.62977 16.8422 7.5013V7.27109C16.7516 7.30807 16.6859 7.33307 16.6224 7.36067C14.5453 8.26345 12.4687 9.16623 10.3927 10.069C10.265 10.1303 10.1252 10.1622 9.98359 10.1622C9.84196 10.1622 9.70214 10.1303 9.57448 10.069C6.54219 8.74748 3.50694 7.43064 0.46875 6.11848C0.36411 6.07603 0.268856 6.01338 0.188428 5.93411C0.107999 5.85485 0.0439716 5.76052 0 5.6565V5.344Z"
+                        fill="#2B2B2E"
+                      />
+                      <path class="fill" d="M3.74193 10.4228V9.32902C3.74193 9.00922 3.84609 8.94047 4.13411 9.0686C5.78828 9.78579 7.44505 10.4967 9.09453 11.2259C9.69141 11.4894 10.2638 11.4894 10.8602 11.229C12.5044 10.5051 14.1549 9.79516 15.8029 9.07954C16.1227 8.94047 16.2195 9.00089 16.2195 9.34308C16.2195 9.92901 16.1945 10.516 16.2247 11.0998C16.2846 12.2415 15.7815 13.0905 14.9107 13.7603C14.0674 14.4061 13.0997 14.7707 12.0711 14.979C10.293 15.3337 8.53255 15.267 6.80755 14.6795C5.87318 14.3613 5.02474 13.8946 4.38203 13.117C3.95755 12.6035 3.7263 12.017 3.74088 11.341C3.74974 11.0342 3.74193 10.7285 3.74193 10.4228Z" fill="#2B2B2E" />
+                    </svg>
+                  </span>
+                  <span class="nav-text">База знаний</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav-icon">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="fill" width="17" height="17" rx="2" fill="#2B2B2E" />
+                      <path d="M2.5 2.9209V13.3709C2.5 13.7173 2.62292 14.0496 2.84171 14.2945C3.0605 14.5395 3.35725 14.6771 3.66667 14.6771H13" stroke="black" stroke-width="1.2" stroke-miterlimit="5.759" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M4.83301 10.1054L7.16634 7.49289L9.49967 10.1054L12.9997 6.18665" stroke="black" stroke-width="1.2" stroke-miterlimit="5.759" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11.25 6.18652H13V8.14589" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span class="nav-text">Монеты</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav-icon">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        class="fill"
+                        d="M0 15.328L0.224022 15.2572C0.635523 15.1318 0.996391 14.8787 1.25427 14.5344C1.51214 14.1901 1.65361 13.7726 1.65815 13.3424C1.66581 9.93552 1.67921 6.52859 1.64921 3.12167C1.64219 2.33152 1.73474 1.60967 2.24788 0.99441C2.86889 0.250222 3.67435 -0.0720894 4.64001 0.0134349C4.73511 0.021732 4.83148 0.0268374 4.92594 0.0268374C8.19075 0.0268374 11.4551 0.0279023 14.7191 0.0300297C15.1295 0.0300297 15.5546 0.00194715 15.949 0.0938538C17.2733 0.395103 18.1356 1.66456 17.9824 3.01444C17.9725 3.10942 17.9681 3.20489 17.969 3.30037C17.9677 6.22564 17.9671 9.15304 17.9671 12.0826C17.9671 12.5025 17.9926 12.9359 17.9033 13.3386C17.6339 14.5302 16.5496 15.3669 15.3299 15.3682C10.2265 15.3708 5.12316 15.3708 0.0197854 15.3682L0 15.328ZM7.25169 11.773C7.81717 11.773 8.38265 11.773 8.94749 11.773C9.47276 11.773 9.82699 11.4124 9.82444 10.8846C9.82061 10.111 9.82061 9.33728 9.82444 8.5633C9.82444 8.03867 9.46064 7.67679 8.94111 7.67934C7.82674 7.68445 6.71238 7.68445 5.59801 7.67934C5.07018 7.67615 4.71277 8.02399 4.71404 8.55628C4.7166 9.33834 4.7166 10.1202 4.71404 10.9018C4.71404 11.4213 5.06125 11.7737 5.57886 11.7724C6.13626 11.7728 6.69387 11.773 7.25169 11.773ZM10.1972 4.87491H10.5552C11.9874 4.87491 13.4196 4.87491 14.8519 4.87491C15.3573 4.87491 15.6956 4.53026 15.6694 4.05541C15.6465 3.63609 15.3101 3.34377 14.8397 3.34377C12.294 3.34377 9.74785 3.34377 7.20127 3.34377C6.63643 3.34377 6.07158 3.34377 5.50674 3.34377C5.16081 3.34377 4.90935 3.50653 4.77595 3.82373C4.5615 4.33432 4.93998 4.87236 5.51823 4.87364C7.07809 4.88002 8.63731 4.87619 10.1972 4.87619V4.87491ZM13.8805 8.95965H14.9036C15.3376 8.9437 15.6528 8.64436 15.6694 8.23397C15.6854 7.80763 15.3905 7.45149 14.9533 7.43809C14.2468 7.41575 13.5384 7.41575 12.8318 7.43809C12.3914 7.45213 12.1004 7.8038 12.1151 8.23333C12.1291 8.64245 12.4457 8.9488 12.881 8.95901C13.2129 8.96476 13.5467 8.95774 13.8824 8.95837L13.8805 8.95965ZM13.8932 12.0232C14.227 12.0232 14.5608 12.0283 14.8946 12.0232C15.3414 12.0143 15.6605 11.7041 15.6707 11.286C15.6763 11.184 15.6609 11.0819 15.6256 10.9861C15.5902 10.8902 15.5356 10.8026 15.4651 10.7287C15.3946 10.6547 15.3097 10.5959 15.2157 10.556C15.1216 10.5161 15.0204 10.4959 14.9182 10.4965C14.2349 10.4812 13.5513 10.4812 12.8676 10.4965C12.7654 10.4952 12.6641 10.515 12.5699 10.5545C12.4757 10.5941 12.3907 10.6527 12.3201 10.7266C12.2496 10.8005 12.195 10.8881 12.1599 10.9841C12.1247 11.08 12.1097 11.1821 12.1157 11.2841C12.1247 11.7041 12.4444 12.0124 12.8912 12.0213C13.225 12.0283 13.5588 12.0226 13.8932 12.0226V12.0232Z"
+                        fill="#2B2B2E"
+                      />
+                    </svg>
+                  </span>
+                  <span class="nav-text">Новости</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav-icon">
+                    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill" d="M0 11.0021V9.96141C0.0226652 9.78455 0.0458829 9.60824 0.0679953 9.43138C0.296305 7.60679 1.0332 6.01561 2.28421 4.67447C3.72925 3.12209 5.51759 2.24334 7.61882 2.00328C7.90517 1.97057 5.74997 2.19654 7.12664 2.07222V11.0021H17C16.8389 12.5101 16.9596 11.3236 16.901 11.7239C16.6589 13.3861 15.9933 14.8658 14.8706 16.1132C12.9291 18.2649 10.4934 19.2219 7.61605 18.9569C5.66298 18.7767 3.9747 17.9589 2.56835 16.5862C1.2894 15.3552 0.437007 13.7459 0.135991 11.9939C0.0779465 11.6674 0.0431191 11.3347 0 11.0021Z" fill="#2B2B2E" />
+                      <path class="fill" d="M9.5013 0.00175831C9.81266 0.050407 10.124 0.0879191 10.4292 0.150049C12.0526 0.46518 13.5455 1.35425 14.6928 2.68916C16 4.1873 16.7436 5.99492 16.9512 8.08154C16.9808 8.38164 16.9839 8.68525 17 9H9.01609V8.76203C9.01609 5.92244 9.01609 3.08284 9.01609 0.243243C9.01609 0.162357 9.00571 0.0808857 9 0L9.5013 0.00175831Z" fill="#2B2B2E" />
+                    </svg>
+                  </span>
+                  <span class="nav-text">Биржи</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- end header-->
+
+      <!-- start content-->
+      <div class="page-content">
+        <div class="container">
+          <div class="widget-coins">
+            <div class="coins-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-eth.svg" alt="" /></span>
+                          <span class="coin-title">ETH</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$17.000</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-eth.svg" alt="" /></span>
+                          <span class="coin-title">ETH</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$17.000</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-btc.svg" alt="" /></span>
+                          <span class="coin-title">BTC</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$17.000</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-down.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-down.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-btc.svg" alt="" /></span>
+                          <span class="coin-title">BTC</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-down.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$17.000</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-down.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-bnb.svg" alt="" /></span>
+                          <span class="coin-title">BNB</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$0.442</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-bnb.svg" alt="" /></span>
+                          <span class="coin-title">BNB</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$0.442</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-usdt.svg" alt="" /></span>
+                          <span class="coin-title">USDT</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$0.442</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-usdt.svg" alt="" /></span>
+                          <span class="coin-title">USDT</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$0.1</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-ltc.svg" alt="" /></span>
+                          <span class="coin-title">LTC</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$0.442</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-ltc.svg" alt="" /></span>
+                          <span class="coin-title">LTC</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$0.03</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-btc.svg" alt="" /></span>
+                          <span class="coin-title">BTC</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$17.000</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-down.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-down.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-btc.svg" alt="" /></span>
+                          <span class="coin-title">BTC</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-down.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$17.000</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-down.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-bnb.svg" alt="" /></span>
+                          <span class="coin-title">BNB</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$0.442</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-bnb.svg" alt="" /></span>
+                          <span class="coin-title">BNB</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$0.442</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="item-content-mobile">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-usdt.svg" alt="" /></span>
+                          <span class="coin-title">USDT</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="coin-price">$0.442</div>
+                        <div class="coin-dynamics">
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                          <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-content-desktop">
+                      <div class="col">
+                        <div class="coin">
+                          <span class="coin-icon"><img src="assets/img/icons/icon-usdt.svg" alt="" /></span>
+                          <span class="coin-title">USDT</span>
+                          <span class="coin-dynamics-arrow"><img src="assets/img/icons/ico-arrow-up.svg" alt="" /></span>
+                        </div>
+                        <div class="coin-price">$0.1</div>
+                      </div>
+                      <div class="col">
+                        <span class="coin-dynamics-graph"><img src="assets/img/graph-up.png" alt="" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li>Михаил Теткин</li>
+            </ul>
+          </nav>
+
+          <div class="page-layout-2col">
+            <div class="column-left">
+              <div class="author-block">
+                <div class="d-md-flex justify-content-between">
+                  <div class="author-card">
+                    <div class="inner">
+                      <div class="author-card-person">
+                        <span class="author-card-icon"><img src="assets/img/ava09.png" alt="" /></span>
+                        <div class="author-card-text">
+                          <span>Михаил Теткин</span>
+                          Автор новостей на CryptoLime с 2018 года.
+                        </div>
+                      </div>
+
+                      <ul class="author-card-details">
+                        <li><strong>450</strong>Подписчиков</li>
+                        <li><strong>30</strong>Подписок</li>
+                      </ul>
+
+                      <div class="author-card-socials">
+                        <a href="#"><img src="assets/img/icons/ico-twitter-gray.svg" alt="" /></a>
+                        <a href="#"><img src="assets/img/icons/ico-telegram-gray.svg" alt="" /></a>
+                        <a href="#"><img src="assets/img/icons/ico-facebook-gray.svg" alt="" /></a>
+                        <a href="#"><img src="assets/img/icons/ico-linked-gray.svg" alt="" /></a>
+                        <a href="#"><img src="assets/img/icons/ico-vk-gray.svg" alt="" /></a>
+                      </div>
+
+                      <a href="#" class="btn btn-lime">Подписаться</a>
+                    </div>
+                  </div>
+
+                  <div class="author-info">
+                    <p class="title">Информация о авторе</p>
+                    <div class="read-more-text">
+                      <p>Главный редактор Bits.media с осени 2013 до 1 апреля 2022 года. Все это время по мере возможностей посвятил развитию сайта Bits.media: писал новости, статьи и обзоры, занимался организацией работы команды и изучением мира криптовалют. После ухода с поста главного редактора решил сосредоточиться на справочной и обучающей части ресурса.</p>
+                      <p>Образование техническое, ранее основной деятельностью была дрессировка SAP-а, от которого даже кони дохнут. Поэтому был рад сменить профессию на более безопасную и одновременно удовлетворить свое стремление к высокоинтеллектуальной графомании.</p>
+                      <p>Главный редактор Bits.media с осени 2013 до 1 апреля 2022 года. Все это время по мере возможностей посвятил развитию сайта Bits.media: писал новости, статьи и обзоры, занимался организацией работы команды и изучением мира криптовалют. После ухода с поста главного редактора решил сосредоточиться на справочной и обучающей части ресурса.</p>
+                      <p>Образование техническое, ранее основной деятельностью была дрессировка SAP-а, от которого даже кони дохнут. Поэтому был рад сменить профессию на более безопасную и одновременно удовлетворить свое стремление к высокоинтеллектуальной графомании.</p>
+                    </div>
+                    <button class="read-more-btn">Читать полностью</button>
+                  </div>
+                </div>
+
+                <div class="author-posts">
+                  <div class="news-filter-wrapper d-lg-flex">
+                    <h2 class="h1">СТАТЬИ</h2>
+                    <div class="news-filter">
+                      <div class="inner">
+                        <a href="#" class="btn btn-white">Все статьи</a>
+                        <div class="news-categories">
+                          <a href="#" class="news-category active">Последние статьи</a>
+                          <a href="#" class="news-category">Популярные статьи</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-list view-type-list" data-class="view-type-list">
+                    <div class="view-type d-lg-none">
+                      <button type="button" data-type="view-type-box">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.3125 15.75H9.5625V9.5625H15.75V13.3125C15.75 13.959 15.4932 14.579 15.0361 15.0361C14.579 15.4932 13.959 15.75 13.3125 15.75ZM15.75 8.4375H9.5625V2.25H13.3125C13.959 2.25 14.579 2.50681 15.0361 2.96393C15.4932 3.42105 15.75 4.04103 15.75 4.6875V8.4375ZM8.4375 8.4375V2.25H4.6875C4.04103 2.25 3.42105 2.50681 2.96393 2.96393C2.50681 3.42105 2.25 4.04103 2.25 4.6875V8.4375H8.4375ZM2.25 9.5625V13.3125C2.25 13.959 2.50681 14.579 2.96393 15.0361C3.42105 15.4932 4.04103 15.75 4.6875 15.75H8.4375V9.5625H2.25Z" fill="#2B2B2E" />
+                        </svg>
+                      </button>
+                      <button type="button" class="active" data-type="view-type-list">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M3.33333 11.6667H5C5.45833 11.6667 5.83333 11.2917 5.83333 10.8333V9.16666C5.83333 8.70832 5.45833 8.33332 5 8.33332H3.33333C2.875 8.33332 2.5 8.70832 2.5 9.16666V10.8333C2.5 11.2917 2.875 11.6667 3.33333 11.6667ZM3.33333 15.8333H5C5.45833 15.8333 5.83333 15.4583 5.83333 15V13.3333C5.83333 12.875 5.45833 12.5 5 12.5H3.33333C2.875 12.5 2.5 12.875 2.5 13.3333V15C2.5 15.4583 2.875 15.8333 3.33333 15.8333ZM3.33333 7.49999H5C5.45833 7.49999 5.83333 7.12499 5.83333 6.66666V4.99999C5.83333 4.54166 5.45833 4.16666 5 4.16666H3.33333C2.875 4.16666 2.5 4.54166 2.5 4.99999V6.66666C2.5 7.12499 2.875 7.49999 3.33333 7.49999ZM7.5 11.6667H16.6667C17.125 11.6667 17.5 11.2917 17.5 10.8333V9.16666C17.5 8.70832 17.125 8.33332 16.6667 8.33332H7.5C7.04167 8.33332 6.66667 8.70832 6.66667 9.16666V10.8333C6.66667 11.2917 7.04167 11.6667 7.5 11.6667ZM7.5 15.8333H16.6667C17.125 15.8333 17.5 15.4583 17.5 15V13.3333C17.5 12.875 17.125 12.5 16.6667 12.5H7.5C7.04167 12.5 6.66667 12.875 6.66667 13.3333V15C6.66667 15.4583 7.04167 15.8333 7.5 15.8333ZM6.66667 4.99999V6.66666C6.66667 7.12499 7.04167 7.49999 7.5 7.49999H16.6667C17.125 7.49999 17.5 7.12499 17.5 6.66666V4.99999C17.5 4.54166 17.125 4.16666 16.6667 4.16666H7.5C7.04167 4.16666 6.66667 4.54166 6.66667 4.99999Z"
+                            fill="#2B2B2E"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="post-item">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img10.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+                    <div class="post-item">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img11.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+                    <div class="post-item">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img12.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+                    <div class="post-item">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img13.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+                    <div class="post-item">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img14.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+                    <div class="post-item d-none d-lg-flex">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img15.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+
+                    <div class="d-lg-none">
+                      <nav class="pagination">
+                        <ul>
+                          <li class="pagination-prev">
+                            <a href="#"><img src="assets/img/icons/ico-pager-prev.svg" alt="" /></a>
+                          </li>
+                          <li><a href="#">1</a></li>
+                          <li><span>...</span></li>
+                          <li class="pagination-current"><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><span>...</span></li>
+                          <li class="pagination-next">
+                            <a href="#"><img src="assets/img/icons/ico-pager-next.svg" alt="" /></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+
+                    <div class="banner-promo">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="assets/img/banner02.png" />
+                        <img src="assets/img/banner-m.png" alt="" />
+                      </picture>
+                    </div>
+
+                    <div class="post-item d-none d-lg-flex">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img16.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+                    <div class="post-item d-none d-lg-flex">
+                      <div class="post-item-image">
+                        <figure>
+                          <a href="#"><img src="assets/img/img17.png" alt="" /></a>
+                        </figure>
+                      </div>
+                      <div class="post-item-text">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="post-item-tags">
+                            <a href="#">Биткоин</a>
+                          </div>
+                          <button class="btn-plus"><img src="assets/img/icons/ico-plus.svg" alt="" /></button>
+                        </div>
+                        <div class="post-item-title">
+                          <a href="#">Лучшими криптоактивами за 7 дней стали HT и QNT</a>
+                        </div>
+                        <p>FTX Group подала заявление о несостоятельности в соответствии с Главой 11 Кодекса США о банкротстве. Сэм Бэнкман-Фрид ушел с поста CEO.</p>
+                        <div class="post-item-date">08.10.2022</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-right">
+              <div class="author-list">
+                <div class="inner">
+                  <h2 class="h1">ПОХОЖИЕ АВТОРЫ</h2>
+                  <ul>
+                    <li>
+                      <a href="#" class="author-list-item">
+                        <span class="author-list-icon"><img src="assets/img/ava04.png" alt="" /></span>
+                        <div class="author-list-text">
+                          <span>Михаил Теткин</span>
+                          Автор новостей на CryptoLime с 2018 года.
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="author-list-item">
+                        <span class="author-list-icon"><img src="assets/img/ava05.png" alt="" /></span>
+                        <div class="author-list-text">
+                          <span>Геннадий Петров</span>
+                          Основной редактор-новостник
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="author-list-item">
+                        <span class="author-list-icon"><img src="assets/img/ava06.png" alt="" /></span>
+                        <div class="author-list-text">
+                          <span>Иван Мальцев </span>
+                          Автор новостей на CryptoLime с 2018 года.
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="author-list-item">
+                        <span class="author-list-icon"><img src="assets/img/ava07.png" alt="" /></span>
+                        <div class="author-list-text">
+                          <span>Егор Лебедев</span>
+                          Автор новостей на CryptoLime с 2018 года.
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="author-list-item">
+                        <span class="author-list-icon"><img src="assets/img/ava08.png" alt="" /></span>
+                        <div class="author-list-text">
+                          <span>Константин Быков </span>
+                          Автор новостей на CryptoLime с 2018 года.
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sidebar-banner d-none d-lg-block">
+                <a href="#"><img src="assets/img/banner01.png" alt="" /></a>
+              </div>
+
+              <div class="block-twitter">
+                <a class="twitter-timeline" data-height="490" data-theme="dark" href="https://twitter.com/VitalikButerin?ref_src=twsrc%5Etfw">Tweets by VitalikButerin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more-news-wrapper d-lg-none">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+              <h2 class="h1">БОЛЬШЕ НОВОСТЕЙ</h2>
+              <a href="#" class="see-all">Смотреть все </a>
+            </div>
+            <div class="wrapper">
+              <div class="column">
+                <div class="news-item news-item--image-wide">
+                  <div class="news-item-img">
+                    <a href="#"><img src="assets/img/img06.png" alt="" /></a>
+                  </div>
+                  <div class="news-item-text">
+                    <a class="news-item-title" href="#">Bloomberg исключил Сэма Бэнкмана-Фрида из списка </a>
+                    <a href="#" class="news-author">
+                      <span class="news-author-icon"><img src="assets/img/ava03.png" alt="" /></span>
+                      <span class="news-author-text">Александр Савельев<span>08.10.2022</span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="news-item news-item--image-wide">
+                  <div class="news-item-img">
+                    <a href="#"><img src="assets/img/img07.png" alt="" /></a>
+                  </div>
+                  <div class="news-item-text">
+                    <a class="news-item-title" href="#">Британская криптобиржа Archax привлекла $28,5 млн</a>
+                    <a href="#" class="news-author">
+                      <span class="news-author-icon"><img src="assets/img/ava03.png" alt="" /></span>
+                      <span class="news-author-text">Александр Савельев<span>08.10.2022</span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="news-item news-item--image-wide">
+                  <div class="news-item-img">
+                    <a href="#"><img src="assets/img/img08.png" alt="" /></a>
+                  </div>
+                  <div class="news-item-text">
+                    <a class="news-item-title" href="#">Bitget запустила сервис для публикации торговых идей и прог..</a>
+                    <a href="#" class="news-author">
+                      <span class="news-author-icon"><img src="assets/img/ava03.png" alt="" /></span>
+                      <span class="news-author-text">Александр Савельев<span>08.10.2022</span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="news-item news-item--image-wide">
+                  <div class="news-item-img">
+                    <a href="#"><img src="assets/img/img09.png" alt="" /></a>
+                  </div>
+                  <div class="news-item-text">
+                    <a class="news-item-title" href="#">Президент Сальвадора назвал FTX противоположностью биткоина</a>
+                    <a href="#" class="news-author">
+                      <span class="news-author-icon"><img src="assets/img/ava03.png" alt="" /></span>
+                      <span class="news-author-text">Александр Савельев<span>08.10.2022</span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end content-->
+
+      <!-- start page footer-->
+      <footer class="page-footer">
+        <div class="footer-bg"></div>
+        <div class="inner">
+          <div class="container">
+            <div class="wrapper">
+              <div class="footer-subscription">
+                <div class="h1">ПОДПИШИТЕСЬ, ЧТОБЫ ПОЛУЧАТЬ ЛУЧШИЕ НОВОСТИ НЕДЕЛИ</div>
+                <form action="#" class="subscription-form">
+                  <div class="field">
+                    <input type="email" placeholder="Email" />
+                    <button type="submit" class="btn btn-lime"></button>
+                  </div>
+                </form>
+              </div>
+              <div class="footer-info">
+                <div class="footer-logo"><img src="assets/img/logo.svg" alt="" /></div>
+                <div class="footer-info-row">
+                  <div class="footer-info-col">
+                    <p>Журнал, который предлагает оригинальное освещение новостей о блокчейне, криптовалютах и цифровой экономике</p>
+                  </div>
+                  <div class="footer-info-col">
+                    <p>Разрешается копировать и распространять материал в других изданиях и социальных сетях только при указании активной ссылки на CryptoLime как источник</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-contact d-none d-lg-block">
+                <div class="h3">КОНТАКТЫ</div>
+                <a href="mailto:info@cryptolime.com">info@cryptolime.com</a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="footer-contact d-lg-none">
+                <div class="h3">КОНТАКТЫ</div>
+                <a href="mailto:info@cryptolime.com">info@cryptolime.com</a>
+              </div>
+              <div class="socials">
+                <a href="#"
+                  ><span class="inner"><img src="assets/img/icons/icon-telegram.svg" alt="" /></span
+                ></a>
+                <a href="#"
+                  ><span class="inner"><img src="assets/img/icons/icon-twitter.svg" alt="" /></span
+                ></a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="copyright">&copy; 2022 «CryptoLime»</div>
+              <div class="privacy"><a href="#">Политика конфиденциальности</a></div>
+              <div class="conditions"><a href="#">Условия использования</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end page footer-->
+    </div>
+
+    <!-- start popup login-->
+    <div id="popupLogin" class="popup">
+      <div class="inner">
+        <h3>ВОЙТИ В АККАУНТ</h3>
+        <form class="form" action="#" novalidate>
+          <div class="field">
+            <input type="text" placeholder="Логин *" required />
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Пароль" required />
+            <button type="button" class="pass-switch">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 6.5C0 6.5 2.625 2 7 2C11.375 2 14 6.5 14 6.5C14 6.5 11.375 11 7 11C2.625 11 0 6.5 0 6.5ZM7 9.36364C7.81223 9.36364 8.59118 9.06193 9.16551 8.5249C9.73984 7.98786 10.0625 7.25948 10.0625 6.5C10.0625 5.74052 9.73984 5.01214 9.16551 4.4751C8.59118 3.93807 7.81223 3.63636 7 3.63636C6.18777 3.63636 5.40882 3.93807 4.83449 4.4751C4.26016 5.01214 3.9375 5.74052 3.9375 6.5C3.9375 7.25948 4.26016 7.98786 4.83449 8.5249C5.40882 9.06193 6.18777 9.36364 7 9.36364Z" fill="#6D6969" />
+                <line x1="1.70711" y1="1" x2="12.3137" y2="11.6066" stroke="#6D6969" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <p><a href="#">Сбросить пароль</a></p>
+          <div class="submit">
+            <button type="submit" class="btn btn-lime">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end popup login-->
+
+    <!-- start popup register-->
+    <div id="popupRegister" class="popup">
+      <div class="inner">
+        <h3>ЗАРЕГИСТРИРОВАТЬСЯ</h3>
+        <form class="form" action="#" novalidate>
+          <div class="field">
+            <input type="text" placeholder="Логин *" required />
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Пароль" required />
+            <button type="button" class="pass-switch">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 6.5C0 6.5 2.625 2 7 2C11.375 2 14 6.5 14 6.5C14 6.5 11.375 11 7 11C2.625 11 0 6.5 0 6.5ZM7 9.36364C7.81223 9.36364 8.59118 9.06193 9.16551 8.5249C9.73984 7.98786 10.0625 7.25948 10.0625 6.5C10.0625 5.74052 9.73984 5.01214 9.16551 4.4751C8.59118 3.93807 7.81223 3.63636 7 3.63636C6.18777 3.63636 5.40882 3.93807 4.83449 4.4751C4.26016 5.01214 3.9375 5.74052 3.9375 6.5C3.9375 7.25948 4.26016 7.98786 4.83449 8.5249C5.40882 9.06193 6.18777 9.36364 7 9.36364Z" fill="#6D6969" />
+                <line x1="1.70711" y1="1" x2="12.3137" y2="11.6066" stroke="#6D6969" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Повторите пароль" required />
+            <button type="button" class="pass-switch">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 6.5C0 6.5 2.625 2 7 2C11.375 2 14 6.5 14 6.5C14 6.5 11.375 11 7 11C2.625 11 0 6.5 0 6.5ZM7 9.36364C7.81223 9.36364 8.59118 9.06193 9.16551 8.5249C9.73984 7.98786 10.0625 7.25948 10.0625 6.5C10.0625 5.74052 9.73984 5.01214 9.16551 4.4751C8.59118 3.93807 7.81223 3.63636 7 3.63636C6.18777 3.63636 5.40882 3.93807 4.83449 4.4751C4.26016 5.01214 3.9375 5.74052 3.9375 6.5C3.9375 7.25948 4.26016 7.98786 4.83449 8.5249C5.40882 9.06193 6.18777 9.36364 7 9.36364Z" fill="#6D6969" />
+                <line x1="1.70711" y1="1" x2="12.3137" y2="11.6066" stroke="#6D6969" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="field">
+            <input type="email" placeholder="Почта" required />
+          </div>
+          <div class="field">
+            <input type="tel" placeholder="Номер телефона" required />
+          </div>
+          <div class="submit">
+            <button type="submit" class="btn btn-lime">Зарегистрироваться</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end popup register-->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.jstyling.js"></script>
+    <script src="assets/js/jquery.barrating.js"></script>
+    <script src="assets/js/bPopup.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>

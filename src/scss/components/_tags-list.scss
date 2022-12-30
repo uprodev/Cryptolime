@@ -1,0 +1,56 @@
+.tags-list {
+  @include glass;
+  margin: -25px 0 0;
+
+  .inner {
+    padding: 34px 16px;
+    position: relative;
+  }
+
+  .h1 {
+    margin: 0 0 30px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 18px;
+
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #b9b9b9;
+      padding: 0 20px;
+      border-radius: 20px;
+      background: $gray-700;
+      margin: 0 6px 10px 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 32px 0 40px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .inner {
+      padding: 28px 15px 28px 24px;
+    }
+
+    .h1 {
+      margin: 0 0 27px;
+    }
+
+    .tags {
+      margin: 0 0 6px;
+
+      a {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

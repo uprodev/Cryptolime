@@ -1,0 +1,47 @@
+// Fonts
+$font-family-base: "Manrope", sans-serif;
+
+// Colors
+$white: #fff;
+$black: #000;
+
+$red: #ff453a;
+
+$green: #32d74b;
+$greenDark: #8c9f47;
+$lime: #d5fb50;
+
+$gray-100: #ebebf5;
+$gray-200: #d3d3d9;
+$gray-300: #c1c1c4;
+$gray-400: #b9b9ba;
+$gray-500: #6d6969;
+$gray-700: #353538;
+$gray-800: #262629;
+$gray-900: #1e1e1e;
+
+$text-color: $gray-300;
+
+$search-input-color: $gray-100;
+$placeholder-color: $text-color;
+$error: $red;
+$valid: $lime;
+$input-border: $gray-500;
+$form-note: #7e7e7e;
+
+$menu-color: #2b2b2e;
+
+$news-card-border: #0e0e0f;
+
+// Container
+
+$content-max: 1610px;
+$grid-gutter-width: 20px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1600px,
+);

@@ -1,0 +1,44 @@
+.breadcrumbs {
+  margin: -3px 0 30px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:after {
+        content: "";
+        display: block;
+        background: url(../img/bg/breadcrumb.svg) no-repeat;
+        width: 8px;
+        height: 13px;
+        margin: 0 11px;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      a {
+        color: $gray-500;
+
+        &:hover {
+          color: $gray-200;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: -24px 0 44px;
+  }
+}

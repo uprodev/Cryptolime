@@ -1,0 +1,26 @@
+.view-type {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 10px;
+
+    svg {
+      path {
+        transition: all 0.2s;
+      }
+    }
+
+    &:hover,
+    &.active {
+      svg {
+        path {
+          fill: $gray-100;
+        }
+      }
+    }
+  }
+}

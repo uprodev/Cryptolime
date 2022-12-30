@@ -1,0 +1,162 @@
+.news-item {
+  border-bottom: 1px solid $news-card-border;
+  padding: 14px 0 17px;
+
+  .news-item-time {
+    font-size: 12px;
+    line-height: 16px;
+    color: $gray-400;
+    margin: 0 0 10px;
+  }
+
+  .news-item-title {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 115.6%;
+    color: $gray-200;
+    max-height: 2.312em;
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 0 16px;
+    margin: 0 0 16px;
+
+    &:last-child {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+
+    &:last-child {
+      padding: 0;
+      margin: 0;
+    }
+
+    .news-item-time {
+      margin: -5px 0 16px;
+    }
+
+    .news-item-title {
+      font-size: 18px;
+    }
+  }
+
+  &--image {
+    display: flex;
+    padding: 20px 0;
+
+    .news-item-img {
+      flex: 0 0 auto;
+      width: 37%;
+      max-width: 150px;
+      margin-right: 15px;
+
+      a {
+        display: block;
+        position: relative;
+        padding: 75% 0 0;
+      }
+
+      img {
+        @include img-abs;
+        border-radius: 8px;
+      }
+    }
+    .news-item-text {
+      padding: 6px 0 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      display: block;
+      padding: 0;
+      margin: 0;
+
+      .news-item-img {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+
+        a {
+          padding: 62% 0 0;
+        }
+      }
+      .news-item-text {
+        padding: 25px 0 0;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+      margin: 0;
+
+      .news-item-img {
+        a {
+          padding: 75.3% 0 0;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 0;
+      margin: 0;
+
+      .news-item-text {
+        padding: 31px 0 0;
+      }
+    }
+  }
+
+  &--image-wide {
+    padding: 0;
+    border: none;
+
+    .news-item-img {
+      margin: 0 0 13px;
+
+      a {
+        display: block;
+        padding: 64.97% 0 0;
+        position: relative;
+      }
+
+      img {
+        @include img-abs;
+        border-radius: 8px;
+      }
+    }
+
+    .news-item-title {
+      height: 2.3em;
+      overflow: hidden;
+      margin: 0 0 10px;
+    }
+
+    .news-author {
+      align-items: flex-start;
+
+      .news-author-icon {
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .news-author {
+        align-items: center;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .news-author {
+        margin: 13px 0 0;
+      }
+    }
+  }
+}

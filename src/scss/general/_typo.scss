@@ -1,0 +1,104 @@
+body {
+  font-size: 14px;
+  color: $text-color;
+  font-family: $font-family-base;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: $font-family-base;
+}
+
+h1,
+.h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+h2,
+.h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: $white;
+  margin: 0;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+h3,
+.h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: $white;
+  margin: 0;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+h4,
+.h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115.6%;
+  color: $white;
+  margin: 0;
+
+  a {
+    color: inherit;
+  }
+}
+
+h5,
+.h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115.6%;
+  color: $white;
+  margin: 0;
+
+  a {
+    color: inherit;
+  }
+}
+
+p {
+  margin: 0 0 1rem;
+}

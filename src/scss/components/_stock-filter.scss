@@ -1,0 +1,88 @@
+.stock-filter {
+  @include glass;
+  margin: 0 0 75px;
+
+  .inner {
+    padding: 33px 20px 40px;
+  }
+
+  .stock-filter-form {
+    .wrapper {
+      max-width: 220px;
+      margin: auto;
+    }
+
+    .field {
+      margin: 0 0 18px;
+    }
+
+    label {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #b9b9b9;
+      margin: 0 0 14px;
+    }
+
+    .stock-filter-options {
+      padding: 20px 0 0;
+
+      [type="reset"] {
+        @extend .see-all;
+        padding: 0;
+        background: none;
+        border: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .inner {
+      padding: 50px 20px;
+    }
+
+    .stock-filter-form {
+      .wrapper {
+        max-width: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+      }
+
+      .field {
+        width: 33.3333%;
+        padding: 0 10px;
+        margin: 0 0 33px;
+      }
+
+      .stock-filter-options {
+        padding: 7px 0 0;
+
+        .btn {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .inner {
+      padding: 54px 0 0 39px;
+    }
+
+    .stock-filter-form {
+      label {
+        margin: 0 0 17px;
+      }
+
+      .field {
+        margin: 0 0 34px;
+      }
+
+      .stock-filter-options {
+        padding: 7px 40px 0 0;
+      }
+    }
+  }
+}

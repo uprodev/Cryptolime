@@ -1,0 +1,34 @@
+.news-single {
+  margin: 0 0 46px;
+
+  .article-image-main {
+    height: 140px;
+    margin: 0 0 32px;
+
+    img {
+      @include img-fit;
+      border-radius: 8px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 74px;
+
+    .page-layout-2col .column-left {
+      padding-right: 17px;
+    }
+    .article-image-main {
+      height: auto;
+      margin: 0;
+    }
+    .article-info {
+      margin: 22px 0;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .article {
+      margin: -59px 0 0;
+    }
+  }
+}

@@ -1,0 +1,246 @@
+.coin-card {
+  @include glass;
+  margin: 0 0 44px;
+
+  .inner {
+    padding: 40px 18px 35px;
+  }
+
+  .coin-card-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 19px;
+
+    .coin-card-icon {
+      width: 70px;
+      height: 70px;
+      background: $white;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      margin-right: 15px;
+
+      img {
+        display: block;
+        max-width: 35px;
+        max-height: 50px;
+      }
+    }
+
+    .coin-card-text {
+      p {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        color: $white;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+      }
+    }
+
+    .coin-card-links {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0 0;
+      width: 100%;
+
+      a {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #b9b9b9;
+        padding: 0 20px;
+        border-radius: 20px;
+        background: $gray-700;
+        margin: 0 6px 6px 0;
+        white-space: nowrap;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .coin-card-price {
+    margin: 0 0 26px;
+
+    .coin-card-price-main {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 41px;
+      color: $white;
+      margin: 0 11px 0 0;
+    }
+
+    .coin-card-price-dif {
+      font-size: 14px;
+      line-height: 22px;
+      background: $red;
+      border-radius: 5px;
+      display: block;
+      color: $white;
+      padding: 0 4px;
+    }
+
+    .coin-card-price-change {
+      font-size: 14px;
+      line-height: 19px;
+      color: $green;
+      margin: 6px 0 0;
+    }
+  }
+
+  .coin-card-data {
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin: 0 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        .coin-card-data-title {
+          color: #b9b9b9;
+          font-size: 12px;
+          line-height: 16px;
+
+          span {
+            color: $lime;
+          }
+        }
+
+        .coin-card-data-value {
+          display: block;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 36px;
+
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 35px 53px 84px 30px;
+    }
+
+    .coin-card-title {
+      margin: 0 0 -46px;
+      flex: 0 0 auto;
+      width: 250px;
+    }
+
+    .coin-card-price {
+      margin: 0 20px;
+      white-space: nowrap;
+    }
+
+    .coin-card-data {
+      width: 100%;
+      max-width: 620px;
+
+      ul {
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+          margin: 0;
+          display: block;
+
+          .coin-card-data-title {
+            color: #b9b9b9;
+            font-size: 14px;
+            line-height: 19px;
+          }
+
+          .coin-card-data-value {
+            display: block;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: $white;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .coin-card-title {
+      margin: 0 0 -51px;
+      width: 260px;
+
+      .coin-card-icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+      }
+
+      .coin-card-text {
+        p {
+          font-size: 24px;
+          line-height: 33px;
+          margin: 0;
+        }
+        span {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      .coin-card-links {
+        margin: 25px 0 0;
+        a {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .coin-card-price {
+      margin: 0 80px 0 20px;
+    }
+
+    .coin-card-data {
+      width: 100%;
+      ul {
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+          margin: 0;
+          display: block;
+
+          .coin-card-data-value {
+            font-size: 30px;
+            line-height: 41px;
+          }
+        }
+      }
+    }
+  }
+}

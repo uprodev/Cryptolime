@@ -1,0 +1,51 @@
+.cite {
+  @include glass;
+  margin: 30px 0;
+
+  .inner {
+    padding: 26px 41px;
+  }
+
+  blockquote {
+    display: block;
+    position: relative;
+    color: $white;
+    margin: 0;
+    padding: 40px 0 0;
+
+    &:before {
+      content: "\201c";
+      font-weight: 400;
+      font-size: 90px;
+      line-height: 0.75;
+      position: absolute;
+      top: 0;
+      left: -0.08em;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 113.1%;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .inner {
+      padding: 41px 36px 45px;
+    }
+
+    blockquote {
+      p {
+        font-size: 18px;
+        line-height: 115.1%;
+      }
+    }
+  }
+}

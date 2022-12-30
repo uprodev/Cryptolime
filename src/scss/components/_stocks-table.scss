@@ -1,0 +1,333 @@
+.stocks-table-wrapper {
+  margin: 0 0 45px;
+
+  .inner {
+    position: relative;
+  }
+
+  .stocks-table {
+    margin: 0 -20px 0 0;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      background: linear-gradient(to left, rgba($black, 0.6) 0%, rgba($black, 0) 100%);
+    }
+
+    .scroller-controls {
+      .scroller-left,
+      .scroller-right {
+        width: 12px;
+        height: 86px;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .scroller-left {
+        background: url(../img/icons/ico-chevron-left.svg) 50% no-repeat;
+        left: 116px;
+        z-index: 2;
+      }
+      .scroller-right {
+        background: url(../img/icons/ico-chevron-right.svg) 50% no-repeat;
+        right: 20px;
+        z-index: 2;
+      }
+    }
+
+    .scroller {
+      padding: 0 20px 0 0;
+    }
+  }
+
+  ul {
+    display: table;
+    border-spacing: 0 5px;
+    padding: 0 20px 0 0;
+
+    li {
+      display: table-row;
+      margin: 0 0 5px;
+
+      .cell {
+        display: table-cell;
+      }
+
+      &.stocks-table-head {
+        .cell {
+          border-top: 1px solid #121212;
+          border-bottom: 1px solid #121212;
+          padding: 18px 0 18px 26px;
+          font-size: 12px;
+          line-height: 16px;
+          color: #b9b9b9;
+          vertical-align: top;
+          font-weight: 400;
+          text-align: left;
+          height: 86px;
+
+          &.fix {
+            border-left: 1px solid #121212;
+            border-right: 1px solid rgba(36, 36, 36, 0.5);
+            border-radius: 4px 0 0 4px;
+            padding: 18px;
+            background-color: $black;
+          }
+
+          &:last-child {
+            border-radius: 0 4px 4px 0;
+          }
+        }
+      }
+
+      &.stocks-table-row {
+        .cell {
+          text-align: left;
+          vertical-align: middle;
+          padding: 0 0 0 26px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          color: #b9b9b9;
+
+          &.fix {
+            border-right: 1px solid rgba(36, 36, 36, 0.5);
+            border-radius: 4px 0 0 4px;
+            width: 116px;
+            min-width: 116px;
+            padding: 0 14px;
+          }
+
+          &:last-child {
+            border-radius: 0 4px 4px 0;
+            padding-right: 10px;
+          }
+        }
+
+        &:nth-child(2n) {
+          .cell {
+            background-color: rgba(36, 36, 36, 0.4);
+            height: 75px;
+
+            &.fix {
+              background-color: #1c1c1f;
+            }
+          }
+        }
+
+        &:nth-child(2n + 1) {
+          .cell {
+            background-color: rgba(36, 36, 36, 0.9);
+            height: 62px;
+
+            &.fix {
+              background-color: #222223;
+            }
+          }
+        }
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 115.6%;
+        color: #ebebf5;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+          background: #1c1c1e;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 auto;
+          margin-right: 6px;
+
+          img {
+            display: block;
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 210px;
+
+        a {
+          display: block;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #b9b9b9;
+          padding: 0 20px;
+          border-radius: 20px;
+          background: $gray-700;
+          margin: 0 6px 6px 0;
+          white-space: nowrap;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .stock-rate {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #3e3e3e;
+        border-radius: 8px;
+        width: 42px;
+        height: 42px;
+
+        img {
+          display: block;
+          margin: 0 0 -3px;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 19px;
+          color: $lime;
+        }
+      }
+    }
+  }
+
+  .clone {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 116px;
+      top: 0;
+      bottom: 0;
+      width: 30px;
+      background: linear-gradient(to right, rgba($black, 0.4) 0%, rgba($black, 0) 100%);
+    }
+
+    li {
+      .cell {
+        &:not(.fix) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .invisible {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    li {
+      .cell {
+        opacity: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 50px 0 107px;
+
+    .stocks-table {
+      margin-right: 0;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    @include glass;
+
+    .inner {
+      padding: 34px 18px 34px 46px;
+    }
+
+    ul {
+      li {
+        &.stocks-table-head {
+          .cell {
+            border: none;
+            padding: 14px 0 14px 20px;
+            height: 75px;
+
+            &.fix {
+              border: none;
+              background-color: transparent;
+              padding: 14px;
+            }
+          }
+        }
+
+        &.stocks-table-row {
+          .cell {
+            padding: 0 0 0 20px;
+            &.fix {
+              border-right: none;
+              width: 172px;
+              padding: 0 0 0 14px;
+            }
+          }
+
+          &:nth-child(2n) {
+            .cell {
+              background-color: rgba(36, 36, 36, 0.4);
+
+              &.fix {
+                background-color: rgba(36, 36, 36, 0.4);
+              }
+            }
+          }
+
+          &:nth-child(2n + 1) {
+            .cell {
+              background-color: rgba(36, 36, 36, 0.9);
+
+              &.fix {
+                background-color: rgba(36, 36, 36, 0.9);
+              }
+            }
+          }
+        }
+
+        .title {
+          font-size: 18px;
+        }
+
+        .links {
+          a {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .clone,
+    .invisible {
+      display: none;
+    }
+
+    .stocks-table {
+      .scroller-controls {
+        display: none;
+      }
+    }
+  }
+}
