@@ -1,0 +1,1 @@
+<div class="banner-promo d-lg-none"><?php the_field('banner') ?></div>
