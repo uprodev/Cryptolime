@@ -1,0 +1,12 @@
+/*   
+Theme Name: CryptoLime
+*/
+
+.pagination ul li a.next, .pagination ul li a.prev {
+    width: 20px;
+    background: #3e3e3e;
+    border-radius: 4px;
+}
+.pagination ul li span {
+    color: #d5fb50;
+}
