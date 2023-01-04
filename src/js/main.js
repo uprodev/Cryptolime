@@ -39,7 +39,6 @@ jQuery(document).ready(function ($) {
             scrollCellNext = $(".invisible .stocks-table-head .cell").index($(this));
           }
         });
-        console.log(scrollCellPrev, scrollCellNext);
       });
 
     $(".scroller-left").on("click", function () {
@@ -57,6 +56,17 @@ jQuery(document).ready(function ($) {
         scrollPosition = scrollPosition + wd;
       }
       $(".stocks-table .scroller").getNiceScroll(0).doScrollLeft(scrollPosition, 1);
+    });
+
+    $(window).on("resize", function () {
+      var scrollWd = $(".stocks-table .scroller").width();
+      var tableWd = $(".stocks-table .scroller .table").width();
+
+      if (tableWd <= scrollWd) {
+        $(".scroller-controls").addClass("hidden");
+      } else {
+        $(".scroller-controls").removeClass("hidden");
+      }
     });
   }
 

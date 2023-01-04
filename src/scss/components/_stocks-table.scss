@@ -20,6 +20,9 @@
     }
 
     .scroller-controls {
+      &.hidden {
+        display: none;
+      }
       .scroller-left,
       .scroller-right {
         width: 12px;
