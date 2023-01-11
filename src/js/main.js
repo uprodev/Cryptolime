@@ -103,8 +103,9 @@ jQuery(document).ready(function ($) {
       loop: true,
       slidesPerView: "auto",
       spaceBetween: 5,
+      speed: 8000,
       autoplay: {
-        delay: 3000,
+        delay: 0,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -237,6 +238,22 @@ jQuery(document).ready(function ($) {
       $(this).parent().addClass("active");
       $activeTab.removeClass("active").hide();
       $nextTab.addClass("active").fadeIn(400);
+    }
+  });
+
+  var activeTabNews = $($(".news-tabs .active").attr("href"));
+  activeTabNews.addClass("active");
+
+  $(".news-tabs .tab-link").on("click", function (e) {
+    e.preventDefault();
+
+    if (!$(this).hasClass("active")) {
+      var $activeTab = $(".tab-panel.active");
+      var $nextTab = $($(this).attr("href"));
+      $(".tab-link .active").removeClass("active");
+      $(this).addClass("active");
+      $activeTab.removeClass("active");
+      $nextTab.addClass("active");
     }
   });
 

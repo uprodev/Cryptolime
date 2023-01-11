@@ -127,6 +127,9 @@
   .swiper-slide {
     width: 164px;
   }
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
 
   @include media-breakpoint-up(lg) {
     .swiper-slide {
