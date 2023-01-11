@@ -3,7 +3,6 @@ jQuery(document).ready(function ($) {
   $(".navbar-toggler").on("click", function () {
     $(this).toggleClass("active");
     $(".mobile-menu").toggleClass("active");
-    // $("html").toggleClass("menu-active");
   });
 
   // scrollbar
@@ -21,6 +20,7 @@ jQuery(document).ready(function ($) {
     $(".stocks-table .table").clone().removeClass("table").addClass("invisible").appendTo(".stocks-table");
     var scrollCellNext = 2;
     var scrollCellPrev = 1;
+    var scrollDir = "right";
     $(".stocks-table .scroller")
       .niceScroll({
         touchbehavior: true,
@@ -31,17 +31,29 @@ jQuery(document).ready(function ($) {
       })
       .scrollend(function (info) {
         var x = info.end.x + 116;
+        var listSize = $(".invisible .stocks-table-head .cell").length;
         $(".invisible .stocks-table-head .cell").each(function () {
-          if (x - $(this).position().left > 0 && x - $(this).position().left < 100) {
-            scrollCellPrev = $(".invisible .stocks-table-head .cell").index($(this));
+          if (scrollDir === "right") {
+            if (x - parseInt($(this).position().left) >= -1 && x - parseInt($(this).position().left) < 100) {
+              scrollCellPrev = $(".invisible .stocks-table-head .cell").index($(this));
+              if (scrollCellPrev === listSize - 1) {
+                scrollCellPrev = $(".invisible .stocks-table-head .cell").index($(this)) - 1;
+              }
+            }
+          } else {
+            if (x - parseInt($(this).position().left) >= 0 && x - parseInt($(this).position().left) < 100) {
+              scrollCellPrev = $(".invisible .stocks-table-head .cell").index($(this)) - 1;
+              if (scrollCellPrev < 1) {
+                scrollCellPrev = 1;
+              }
+            }
           }
-          if ($(this).position().left - x > 0 && $(this).position().left - x < 100) {
-            scrollCellNext = $(".invisible .stocks-table-head .cell").index($(this));
-          }
+          scrollCellNext = scrollCellPrev + 1;
         });
       });
 
     $(".scroller-left").on("click", function () {
+      scrollDir = "left";
       var scrollPosition = 0;
       for (var i = 1; i < scrollCellPrev; i++) {
         var wd = $(".invisible .stocks-table-head .cell").eq(i).outerWidth();
@@ -49,8 +61,11 @@ jQuery(document).ready(function ($) {
       }
       $(".stocks-table .scroller").getNiceScroll(0).doScrollLeft(scrollPosition);
     });
+
     $(".scroller-right").on("click", function () {
+      scrollDir = "right";
       var scrollPosition = 0;
+
       for (var i = 1; i < scrollCellNext; i++) {
         var wd = $(".invisible .stocks-table-head .cell").eq(i).outerWidth();
         scrollPosition = scrollPosition + wd;
@@ -58,7 +73,7 @@ jQuery(document).ready(function ($) {
       $(".stocks-table .scroller").getNiceScroll(0).doScrollLeft(scrollPosition, 1);
     });
 
-    $(window).on("resize", function () {
+    function checkScroll() {
       var scrollWd = $(".stocks-table .scroller").width();
       var tableWd = $(".stocks-table .scroller .table").width();
 
@@ -67,6 +82,11 @@ jQuery(document).ready(function ($) {
       } else {
         $(".scroller-controls").removeClass("hidden");
       }
+    }
+    checkScroll();
+
+    $(window).on("resize", function () {
+      checkScroll();
     });
   }
 

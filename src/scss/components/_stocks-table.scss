@@ -85,6 +85,12 @@
           &:last-child {
             border-radius: 0 4px 4px 0;
           }
+
+          em {
+            font-style: normal;
+            font-weight: normal;
+            color: $lime;
+          }
         }
       }
 
@@ -207,6 +213,69 @@
           color: $lime;
         }
       }
+
+      .coin-title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .coin-icon {
+          width: 20px;
+          height: 20px;
+          margin-right: 7px;
+
+          img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 100%;
+          }
+        }
+
+        .coin-text {
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-100;
+            margin: 0;
+          }
+
+          span {
+            font-size: 12px;
+            line-height: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            color: $gray-300;
+          }
+        }
+      }
+
+      .coin-price {
+        .coin-price-main {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: $white;
+          margin: 0 11px 0 0;
+        }
+
+        .coin-price-dif {
+          font-size: 12px;
+          line-height: 16px;
+          background: $red;
+          border-radius: 5px;
+          display: block;
+          color: $white;
+          padding: 0 2px;
+        }
+
+        .coin-price-change {
+          font-size: 12px;
+          line-height: 16px;
+          color: $green;
+        }
+      }
     }
   }
 
@@ -317,6 +386,38 @@
           a {
             font-size: 16px;
             line-height: 24px;
+          }
+        }
+
+        .coin-title {
+          .coin-icon {
+            width: 36px;
+            height: 36px;
+            margin-right: 14px;
+          }
+
+          .coin-text {
+            p {
+              font-size: 18px;
+              line-height: 21px;
+            }
+
+            span {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+
+        .coin-price {
+          .coin-price-main {
+            font-size: 18px;
+            line-height: 21px;
+          }
+
+          .coin-price-change {
+            font-size: 14px;
+            line-height: 19px;
           }
         }
       }
